@@ -86,7 +86,7 @@ class Config:
     custom_webhook_bearer_token: Optional[str] = None  # Bearer Token（用于需要认证的 Webhook）
     
     # 单股推送模式：每分析完一只股票立即推送，而不是汇总后推送
-    single_stock_notify: bool = False
+    single_stock_notify: bool = True
     
     # 消息长度限制（字节）- 超长自动分批发送
     feishu_max_bytes: int = 20000  # 飞书限制约 20KB，默认 20000 字节
